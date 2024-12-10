@@ -113,7 +113,7 @@ export default function Home() {
           <h2 className="text-lg sm:text-2xl font-semibold mb-4 ">
             GitHub Activity
           </h2>
-          <p className="text-sm sm:text-base mb-8 hover:text-gray-600 transition duration-300">
+          <p className="text-sm sm:text-base mb-4 hover:text-gray-600 transition duration-300">
             Here's an overview of my GitHub contributions and coding activity.
           </p>
           <div className="flex justify-center w-full">
@@ -129,7 +129,7 @@ export default function Home() {
           <p className="text-sm sm:text-base">
             Feel free to reach out to me via email or follow me on social media.
           </p>
-          <div className="flex justify-center gap-4 sm:gap-6 mt-4 text-md sm:text-2xl">
+            <div className="flex justify-center gap-4 sm:gap-6 mt-4 text-md sm:text-4xl text-lg sm:text-4xl">
             <a
               href="mailto:reynald030685@gmail.com"
               className="text-blue-600 hover:text-blue-800 hover:scale-125 transition-transform"
