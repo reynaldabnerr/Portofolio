@@ -20,3 +20,35 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: white;
+  }
+}
+
+.typing-effect {
+  overflow: hidden;
+  /* Menyembunyikan teks yang belum diketik */
+  white-space: nowrap;
+  /* Mencegah teks wrap ke baris baru */
+  border-right: 3px solid white;
+  /* Menambahkan kursor blink */
+  animation: typing 3s steps(30, end), blink 0.6s step-end infinite;
+}

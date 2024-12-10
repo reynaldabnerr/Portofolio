@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   return (
@@ -12,11 +15,26 @@ export default function Home() {
           height={150}
           className="rounded-full transition-transform duration-700 hover:scale-110"
         />
-        <h1 className="text-3xl sm:text-4xl font-bold mt-4 animate-slide-in-down">
-          Reynald Abner Tananda
+        <h1 className="text-3xl sm:text-4xl font-bold mt-4 text-center">
+          <Typewriter
+            words={[
+              "Hello, everyone!",
+              "I'm Reynald Abner Tananda",
+              "A Mobile App Developer",
+              "A Web Developer",
+              "And a CTF Player",
+              "Welcome to My Portfolio",
+            ]}
+            loop={0}
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
         </h1>
         <p className="text-md sm:text-lg font-light animate-slide-in-up text-center">
-          Mobile App Developer | Web Developer | CTF Player | Freelancer
+          Mobile App Developer | Web Developer | CTF Player
         </p>
       </header>
 
