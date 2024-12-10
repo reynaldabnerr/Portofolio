@@ -1,8 +1,3 @@
-export const metadata = {
-  title: "Reynald Abner Tananda - Portfolio",
-  description: "Portfolio of Reynald Abner Tananda - Mobile and Web Developer",
-};
-
 import Image from "next/image";
 
 export default function Home() {
