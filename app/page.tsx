@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import GitHubCalendar from "react-github-calendar";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[auto_1fr_auto] min-h-screen font-sans">
       {/* Header */}
-      <header className="flex flex-col items-center justify-center bg-blue-900 text-white p-8 sm:p-12 animate-fade-in">
+      <header className="flex flex-col items-center justify-center bg-gray-800  text-white p-8 sm:p-12 animate-fade-in">
         <Image
           src="/assets/profile.jpg"
           alt="Profile Picture"
@@ -101,6 +102,25 @@ export default function Home() {
               >
                 View on GitHub
               </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 bg-gray-900 text-white rounded-lg mx-4 sm:mx-8 shadow-lg transition-transform duration-300 hover:scale-105">
+          <div className="max-w-5xl mx-auto text-center animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-8 animate-slide-in-up">
+              GitHub Activity
+            </h2>
+            <p className="text-lg text-gray-300 mb-12 animate-slide-in-up">
+              Here's an overview of my GitHub contributions and coding activity.
+            </p>
+            <div className="flex justify-center">
+              <div className="bg-gray-800 shadow-lg rounded-xl p-6 sm:p-8 transition-transform duration-300 hover:scale-110 hover:shadow-xl">
+                <GitHubCalendar
+                  username="reynaldabnerr" // Ganti dengan username GitHub Anda
+                  colorScheme="dark" // Tema warna
+                />
+              </div>
             </div>
           </div>
         </section>
