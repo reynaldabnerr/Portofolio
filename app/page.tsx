@@ -129,7 +129,7 @@ export default function Home() {
           <p className="text-sm sm:text-base">
             Feel free to reach out to me via email or follow me on social media.
           </p>
-            <div className="flex justify-center gap-4 sm:gap-6 mt-4 text-md sm:text-4xl text-lg sm:text-4xl">
+            <div className="flex justify-center gap-4 sm:gap-6 mt-4 text-md sm:text-4xl text-lg">
             <a
               href="mailto:reynald030685@gmail.com"
               className="text-blue-600 hover:text-blue-800 hover:scale-125 transition-transform"
