@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,8 +14,39 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Reynald Abner Tananda",
-  description: "Portfolio of Reynald Abner Tananda - Mobile and Web Developer",
+  title: "Portofolio Reynald Abner Tananda",
+  description:
+    "Website portofolio pribadi Reynald Abner Tananda. Seorang Web Developer, Mobile Developer, dan CTF Beginner Player.",
+  keywords: [
+    "Portofolio",
+    "Abner",
+    "Reynald Abner",
+    "Reynald Abner Tananda",
+    "Web Developer",
+    "Mobile Developer",
+    "CTF Beginner Player",
+  ],
+  openGraph: {
+    title: "Portofolio Reynald Abner Tananda",
+    description:
+      "Lihat projek, pengalaman, dan perjalanan Reynald Abner Tananda sebagai Web Developer, Mobile Developer, dan CTF Beginner Player.",
+    url: "https://www.abner.my.id/",
+    siteName: "Portofolio Reynald Abner Tananda",
+    images: [
+      {
+        url: "/assets/profile.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Reynald Abner Tananda - Web Developer, Mobile Developer, CTF Player",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://www.abner.my.id/",
+  },
 };
 
 export default function RootLayout({
@@ -25,19 +55,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <Head>
-        {/* Metadata */}
-        <title>{String(metadata.title) ?? ""}</title>
-        <meta name="description" content={metadata.description ?? ""} />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        ></meta>
-
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <html lang="id">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
