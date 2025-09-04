@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     "Web Developer",
     "Mobile Developer",
     "CTF Beginner Player",
+    "Tananda"
   ],
   openGraph: {
     title: "Portofolio Reynald Abner Tananda",
